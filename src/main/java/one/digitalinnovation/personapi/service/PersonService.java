@@ -1,8 +1,8 @@
 package one.digitalinnovation.personapi.service;
 
-import lombok.AllArgsConstructor;
-import one.digitalinnovation.personapi.dto.response.MessageResponseDTO;
+import lombok.RequiredArgsConstructor;
 import one.digitalinnovation.personapi.dto.request.PersonDTO;
+import one.digitalinnovation.personapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personapi.entity.Person;
 import one.digitalinnovation.personapi.exception.PersonNotFoundException;
 import one.digitalinnovation.personapi.mapper.PersonMapper;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
+@RequiredArgsConstructor( onConstructor = @__ ( @Autowired ))
 public class PersonService {
 
     private PersonRepository personRepository;
